@@ -8,7 +8,7 @@
 
 
 
-### JavaScript
+### javascript
 - sample-javascript/graph/googlechart-sample
 - sample-javascript/list_search
 - sample-javascript/movie/d-biblio

@@ -10,7 +10,7 @@
 
 ### javascript
 - sample-javascript/graph/googlechart-sample
-- sample-javascript/list_search
+- sample-javascript/search_form/myCiNiiA
 - sample-javascript/movie/d-biblio
-- sample-javascript/search_form
+- sample-javascript/list_search/listjs-sample
 - sample-javascript/sortable_table/listjs-tableSort

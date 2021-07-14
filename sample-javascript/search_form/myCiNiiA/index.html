@@ -9,7 +9,7 @@
   <!--
   function search() {
     // ベースとなるURLを設定
-    var myTree  = 'https://ci.nii.ac.jp/search?range=0&count=&sortorder=&type=0';
+    var baseURL  = 'https://ci.nii.ac.jp/search?range=0&count=&sortorder=&type=0';
 
     // フォームからキーワードを入手
     var keyword = document.getElementById("key").value;
@@ -29,7 +29,7 @@
         URI_parameter = field + '=' + URI_parameter;
       }
       URI_parameter = '&' + URI_parameter;
-      SEARCH_URL = myTree.concat(URI_parameter);
+      SEARCH_URL = baseURL.concat(URI_parameter);
       window.location.replace(SEARCH_URL);
     }
   }

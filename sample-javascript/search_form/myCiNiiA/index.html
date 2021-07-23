@@ -1,45 +1,48 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title>勝手CiNii Articles検索窓</title>
   <script type="text/javascript">
-  <!--
-  function search() {
-    // ベースとなるURLを設定
-    var baseURL  = 'https://ci.nii.ac.jp/search?range=0&count=&sortorder=&type=0';
+    <!--
+    function search() {
+      // ベースとなるURLを設定
+      var baseURL = 'https://ci.nii.ac.jp/search?range=0&count=&sortorder=&type=0';
 
-    // フォームからキーワードを入手
-    var keyword = document.getElementById("key").value;
-    var field = document.getElementById("field").value;
+      // フォームからキーワードを入手
+      var keyword = document.getElementById("key").value;
+      var field = document.getElementById("field").value;
 
-    // フォームにキーワード書き戻し（入力したキーワードが消えないようにする
-    document.getElementById("key").value = keyword;
+      // フォームにキーワード書き戻し（入力したキーワードが消えないようにする
+      document.getElementById("key").value = keyword;
 
-    // キーワードが空のときはアラートを出す
-    if (keyword == "") { alert("キーワードを入れてください"); }
-    else {
-      var URI_parameter = "";
-      var SEARCH_URL    = "";
-      // UTF8 でURIエンコード
-      URI_parameter = encodeURI(keyword);
-      if (field != "") {
-        URI_parameter = field + '=' + URI_parameter;
+      // キーワードが空のときはアラートを出す
+      if (keyword == "") {
+        alert("キーワードを入れてください");
+      } else {
+        var URI_parameter = "";
+        var SEARCH_URL = "";
+        // UTF8 でURIエンコード
+        URI_parameter = encodeURI(keyword);
+        if (field != "") {
+          URI_parameter = field + '=' + URI_parameter;
+        }
+        URI_parameter = '&' + URI_parameter;
+        SEARCH_URL = baseURL.concat(URI_parameter);
+        window.location.replace(SEARCH_URL);
       }
-      URI_parameter = '&' + URI_parameter;
-      SEARCH_URL = baseURL.concat(URI_parameter);
-      window.location.replace(SEARCH_URL);
     }
-  }
 
-  function enterkey_down(key) {
-    if(key === "Enter"){
-      search();
+    function enterkey_down(key) {
+      if (key === "Enter") {
+        search();
+      }
     }
-  }
-  //-->
+    //
+    -->
   </script>
 </head>
 
@@ -69,4 +72,5 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
+
 </html>

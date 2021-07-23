@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <title>Google Chartによるサービス月次統計グラフ</title>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script>
-    google.load('visualization', '1', {'packages':['corechart']});
+    google.load('visualization', '1', {
+      'packages': ['corechart']
+    });
     google.setOnLoadCallback(drawChart);
+
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
         ['月', '件数'],
@@ -23,14 +27,18 @@
         ['2月', 2121],
         ['3月', 3173]
       ]);
-      var options = { title: 'サービスアクセス件数' };
+      var options = {
+        title: 'サービスアクセス件数'
+      };
       var chart = new google.visualization.ColumnChart(document.getElementById('chart_draw'));
       chart.draw(data, options);
     }
   </script>
 </head>
+
 <body>
   <h1>Google Chartによるサービス月次統計グラフ</h1>
   <div id="chart_draw" style="width:500; height:500"></div>
 </body>
+
 </html>

@@ -14,3 +14,6 @@
 - sample-javascript/movie/d-biblio
 - sample-javascript/list_search/listjs-sample
 - sample-javascript/sortable_table/listjs-tableSort
+
+#3 other
+- sample-other/jekyll-sample

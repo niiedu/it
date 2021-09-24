@@ -22,5 +22,5 @@
 - html-material/3_CSS
 - html-material/4_Bootstrap
 
-## GitHub Pages URL
+## GitHub PagesのURL
 https://niiedu.github.io/it-2021/

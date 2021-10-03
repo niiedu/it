@@ -43,7 +43,7 @@
         <dd class="publicationDate">2010.9</dd>
         <dd class="note"></dd>
       </dl>
-      </li>
+    </li>
       <li>
       <dl>
         <dt class="title">図書館ハンドブック</dt>
@@ -766,7 +766,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 <script>
   // List.jsの動作パラメータ設定
-  var options = {
+  let options = {
     // 絞り込み対象とするclass を指定
     valueNames: ['title', 'creator', 'publisher', 'edition', 'note'],
     // ページネーション指定 pageはページごとの表示件数
@@ -774,10 +774,10 @@
     pagination: true
   };
   // list.jsの対象とする<div>のidを指定
-  var listObj = new List('listdata', options);
+  let listObj = new List('listdata', options);
   // ios対応のため、inputイベントで動作させる
   $('#keyword').on('input', function() {
-    var searchString = $(this).val();
+    let searchString = $(this).val();
     listObj.search(searchString);
   });
 </script>

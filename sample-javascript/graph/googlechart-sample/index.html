@@ -12,7 +12,7 @@
     google.setOnLoadCallback(drawChart);
 
     function drawChart() {
-      var data = google.visualization.arrayToDataTable([
+      let data = google.visualization.arrayToDataTable([
         ['月', '件数'],
         ['4月', 10721],
         ['5月', 2225],
@@ -27,10 +27,10 @@
         ['2月', 2121],
         ['3月', 3173]
       ]);
-      var options = {
+      let options = {
         title: 'サービスアクセス件数'
       };
-      var chart = new google.visualization.ColumnChart(document.getElementById('chart_draw'));
+      let chart = new google.visualization.ColumnChart(document.getElementById('chart_draw'));
       chart.draw(data, options);
     }
   </script>

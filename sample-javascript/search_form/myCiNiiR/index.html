@@ -43,13 +43,13 @@
       // フォームにキーワード書き戻し（入力したキーワードが消えないようにする
       document.getElementById("key").value = keyword;
       // キーワードが空のときはアラートを出す
-      if (keyword == "") { alert("キーワードを入れてください"); }
+      if (keyword === "") { alert("キーワードを入れてください"); }
       else {
         let URI_parameter = "";
         let SEARCH_URL    = "";
         // UTF8 でURIエンコード
         URI_parameter = encodeURI(keyword);
-        if (field != "") {
+        if (field !== "") {
           URI_parameter = field + '=' + URI_parameter;
         }
         URI_parameter = '?' + URI_parameter;
